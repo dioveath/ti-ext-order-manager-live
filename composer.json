@@ -1,7 +1,7 @@
 {
   "name": "charicha/appcompanion",
   "type": "tastyigniter-extension",
-  "description": "Print receipt, manage orders and more. App Companion for TastyIgniter to help with your orders. ",
+  "description": "Print receipt, manage orders and more. App Companion for TastyIgniter to help with your orders.",
   "license": "MIT",
   "authors": [
     {
@@ -17,10 +17,7 @@
         "backgroundColor": "#000",
         "color": "#FFF"
       },
-      "homepage": "https://raisaroj360.com.np",
-      "require": {
-        "igniter.api": "*"
-      }
+      "homepage": "https://raisaroj360.com.np"
     }
   }
 }

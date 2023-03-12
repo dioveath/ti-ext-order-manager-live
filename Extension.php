@@ -1,6 +1,6 @@
-<?php namespace Charicha\AppCompanion;
+<?php namespace Anar\OrderManager;
 
-use Charicha\AppCompanion\Classes\Manager;
+use Anar\OrderManager\Classes\Manager;
 use System\Classes\BaseExtension;
 
 /**
@@ -20,8 +20,8 @@ class Extension extends BaseExtension
         } catch (\Exception $e) {
             // log the error
             log_message('error', $e);
-            // throw $e;
-        }        
+            throw $e;
+        }
     }
 
     /**
@@ -31,6 +31,7 @@ class Extension extends BaseExtension
      */
     public function boot()
     {
+
     }
 
     /**
@@ -40,10 +41,7 @@ class Extension extends BaseExtension
      */
     public function registerComponents()
     {
-        return [
-        // Remove this line and uncomment the line below to activate
-        //    'Charicha\AppCompanion\Components\Settings' => 'settingsComponent',
-        ];
+        return [];
     }
 
     /**
@@ -53,45 +51,16 @@ class Extension extends BaseExtension
      */
     public function registerPermissions()
     {
-// Remove this line and uncomment block to activate
-        return [
-//            'Charicha.AppCompanion.SomePermission' => [
-//                'description' => 'Some permission',
-//                'group' => 'module',
-//            ],
-        ];
+        return [];
     }
 
     public function registerNavigation()
     {
-        return [
-            'settings' => [
-                'priority'    => 100,
-                'title'       => 'App Companion',
-                'label'       => 'App Companion Menu',
-                'description' => 'Manage App Companion',
-                'icon'        => 'fa fa-mobile',                
-                'child'       => [
-                    'settings' => [
-                        'title'      => 'Setup',
-                        'href'       => admin_url('extensions/edit/charicha/appcompanion/settings'),
-                        'description' => 'Setup & Initialize App Companion',
-                        'icon'       => 'fa fa-cog',                        
-                    ]
-                ]
-            ]
-        ];
+        return [];
     }
 
     public function registerSettings()
     {
-        return [
-            'settings' => [
-                'label'       => 'AppCompanion Settings',
-                'description' => 'Manage App Companion',
-                'icon'        => 'fa fa-mobile',
-                'model'       => \Charicha\AppCompanion\Models\Settings::class,
-            ]
-        ];
+        return [];
     }
 }

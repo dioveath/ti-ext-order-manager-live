@@ -1,23 +1,36 @@
 {
-  "name": "charicha/appcompanion",
+  "name": "anar/ti-order-manager",
   "type": "tastyigniter-extension",
-  "description": "Print receipt, manage orders and more. App Companion for TastyIgniter to help with your orders.",
+  "description": "Print receipt, manage orders and more. App Companion for TastyIgniter to help with your orders. ",
   "license": "MIT",
   "authors": [
     {
-      "name": "Saroj Rai"
+      "name": "Anar Tech",
+      "email": "office@anar.digital"
     }
   ],
-  "extra": {
+  "keywords": [
+    "tastyigniter",
+    "orders",
+    "ordermanager",
+    "android app",
+    "app companion",
+    "print receipt",
+    "receipt printer"
+  ],
+  "require": {
+   "tastyigniter/ti-ext-api":"^1.6.1"
+  },
+  "extra": {    
     "tastyigniter-extension": {
-      "code": "charicha.appcompanion",
-      "name": "AppCompanion",
+      "code": "anar.ordermanager",
+      "name": "Order Manager",
       "icon": {
         "class": "fa fa-mobile",
-        "backgroundColor": "#000",
+        "backgroundColor": "#F97316",
         "color": "#FFF"
       },
-      "homepage": "https://raisaroj360.com.np"
+      "homepage": "https://anar.digital"
     }
   }
 }

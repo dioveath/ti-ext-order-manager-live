@@ -1,4 +1,4 @@
-<?php namespace Charicha\AppCompanion\Classes;
+<?php namespace Anar\OrderManager\Classes;
 
 use Exception;
 use Igniter\Flame\Exception\ApplicationException;
@@ -9,7 +9,6 @@ class Manager
 {
     use Singleton;
     public $endpoint = 'https://ti-ext-appcompanion-server.vercel.app';
-    // public $endpoint = 'http://localhost:3000';
 
     public function syncWithAppServer()
     {        

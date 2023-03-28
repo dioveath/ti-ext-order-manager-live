@@ -24,7 +24,7 @@
   "extra": {    
     "tastyigniter-extension": {
       "code": "anar.ordermanager",
-      "name": "Order Manager",
+      "name": "Order Taking App",
       "icon": {
         "class": "fa fa-mobile",
         "backgroundColor": "#F97316",
